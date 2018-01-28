@@ -9,6 +9,6 @@ e = tf.add(c, b)
 f = tf.subtract(d, e)
 
 sess = tf.Session()
-outs = sess.run(f)
+outs = sess.run([a, b, c, d, e, f])
 sess.close()
 print "outs = {}".format(outs)
